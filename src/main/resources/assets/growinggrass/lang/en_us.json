@@ -1,0 +1,14 @@
+{
+  "growinggrass.configuration.growShortGrass": "Enable short grass growing",
+  "growinggrass.configuration.growTallGrass": "Enable tall grass growing",
+  "growinggrass.configuration.shortGrassChance": "Short grass grow chance",
+  "growinggrass.configuration.tallGrassChance": "Tall grass grow chance",
+
+  "growinggrass.configuration.growTallGrass.tooltip": "Enables/Disables tall grass and large fern growth",
+  "growinggrass.configuration.growShortGrass.tooltip": "Enables/Disables short grass, fern and mushrooms growth",
+  "growinggrass.configuration.tallGrassChance.tooltip": "Growth chance of tall grass and large fern ",
+  "growinggrass.configuration.shortGrassChance.tooltip": "Growth chance of short grass, fern and mushrooms out of their respectful blocks",
+  "growinggrass.configuration.title": "Growing Grass Configuration",
+  "growinggrass.configuration.section.growinggrass.common.toml.title": "Growing Grass Common Configuration",
+  "growinggrass.configuration.section.growinggrass.common.toml": "Growing Grass Common Configuration"
+}

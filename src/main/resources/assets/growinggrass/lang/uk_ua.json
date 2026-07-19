@@ -1,0 +1,14 @@
+{
+  "growinggrass.configuration.growShortGrass": "Увімкнути рост короткої трави",
+  "growinggrass.configuration.growTallGrass": "Увімкнути рост високої трави",
+  "growinggrass.configuration.shortGrassChance": "Шанс росту короткої трави",
+  "growinggrass.configuration.tallGrassChance": "Шанс росту високої трави",
+
+  "growinggrass.configuration.growTallGrass.tooltip": "Вмикає/Вимикає ріст високої трави й високої папороті",
+  "growinggrass.configuration.growShortGrass.tooltip": "Вмикає/Вимикає ріст короткої трави, папороті й грибів",
+  "growinggrass.configuration.tallGrassChance.tooltip": "Шанс росту високої трави й високої папороті з короткої",
+  "growinggrass.configuration.shortGrassChance.tooltip": "Шанс росту короткої трави й папороті з їхнього блоку",
+  "growinggrass.configuration.title": "Конфігурація Growing Grass",
+  "growinggrass.configuration.section.growinggrass.common.toml.title": "Загальна Конфігурація Growing Grass",
+  "growinggrass.configuration.section.growinggrass.common.toml": "Загальна Конфігурація Growing Grass"
+}

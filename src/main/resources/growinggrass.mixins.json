@@ -1,0 +1,8 @@
+{
+  "minVersion": "0.8",
+  "package": "com.github.flufflynx.growinggrassmixin",
+  "mixins": [
+    "BlockBehaviourMixin",
+    "SpreadingSnowyDirtBlockMixin"
+  ]
+}
