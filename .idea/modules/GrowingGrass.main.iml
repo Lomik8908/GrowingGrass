@@ -13,9 +13,9 @@
     </facet>
   </component>
   <component name="McpModuleSettings">
-    <option name="mappingFile" value="C:\Users\Fluffical\IdeaProjects\GrowingGrass\build\neoForm\neoFormJoined1.21.1-20240808.144430\steps\mergeMappings\outputs.tsrg" />
-    <option name="minecraftVersion" value="1.21.1" />
-    <option name="platformVersion" value="21.1.240" />
+    <option name="mappingFile" value="C:\Users\Fluffical\IdeaProjects\GrowingGrass\build\neoForm\neoFormJoined1.20.2-20231019.002635\steps\mergeMappings\outputs.tsrg" />
+    <option name="minecraftVersion" value="1.20.2" />
+    <option name="platformVersion" value="20.2.93" />
     <option name="srgType" value="TSRG" />
   </component>
 </module>
