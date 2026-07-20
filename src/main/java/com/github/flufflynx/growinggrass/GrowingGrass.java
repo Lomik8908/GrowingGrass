@@ -1,5 +1,6 @@
 package com.github.flufflynx.growinggrass;
 
+import net.neoforged.api.distmarker.Dist;
 import net.neoforged.bus.api.IEventBus;
 import net.neoforged.fml.ModContainer;
 import net.neoforged.fml.common.Mod;
@@ -15,7 +16,7 @@ public class GrowingGrass {
     public GrowingGrass(IEventBus modEventBus, ModContainer modContainer) {
 //        NeoForge.EVENT_BUS.register(this);
         modContainer.registerConfig(ModConfig.Type.COMMON, Config.SPEC);
-        if (FMLEnvironment.dist.isClient())
+        if (FMLEnvironment.getDist() == Dist.CLIENT)
         {
             modContainer.registerExtensionPoint(IConfigScreenFactory.class, ConfigurationScreen::new);
         }
