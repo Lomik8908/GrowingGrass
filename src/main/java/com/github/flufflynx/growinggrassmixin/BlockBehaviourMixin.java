@@ -28,11 +28,12 @@ public class BlockBehaviourMixin {
     private void onRandomTick(BlockState p_222954_, ServerLevel p_222955_, BlockPos p_222956_, RandomSource p_222957_, CallbackInfo ci)
     {
         BlockState BlockAbove = p_222955_.getBlockState(p_222956_.above());
-        if (p_222954_.is(Blocks.PODZOL) && Config.growShortGrass && p_222955_.random.nextDouble() <= Config.shortGrassChance) {
+        RandomSource rnd = p_222955_.getRandom();
+        if (p_222954_.is(Blocks.PODZOL) && Config.growShortGrass && rnd.nextDouble() <= Config.shortGrassChance) {
             if (!p_222955_.isOutsideBuildHeight(p_222956_.above()) && BlockAbove.isAir()) {
                 p_222955_.setBlock(p_222956_.above(), Blocks.FERN.defaultBlockState(), 3);
             }
-        } else if ((p_222954_.is(Blocks.SHORT_GRASS) || p_222954_.is(Blocks.FERN)) && Config.growTallGrass && p_222955_.random.nextDouble() <= Config.tallGrassChance) {
+        } else if ((p_222954_.is(Blocks.SHORT_GRASS) || p_222954_.is(Blocks.FERN)) && Config.growTallGrass && rnd.nextDouble() <= Config.tallGrassChance) {
             BlockState BlockBellow = p_222955_.getBlockState(p_222956_.below());
             if (!p_222955_.isOutsideBuildHeight(p_222956_.above()) && BlockAbove.isAir() && (BlockBellow.is(Blocks.GRASS_BLOCK)) || BlockBellow.is(Blocks.PODZOL) || BlockBellow.is(Blocks.MYCELIUM))
             {
