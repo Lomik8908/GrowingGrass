@@ -28,11 +28,15 @@ public class BlockBehaviourMixin {
     private void onRandomTick(BlockState p_222954_, ServerLevel p_222955_, BlockPos p_222956_, RandomSource p_222957_, CallbackInfo ci)
     {
         BlockState BlockAbove = p_222955_.getBlockState(p_222956_.above());
-        if (p_222954_.is(Blocks.PODZOL) && Config.growShortGrass && p_222955_.random.nextDouble() <= Config.shortGrassChance) {
+        if (p_222954_.is(Blocks.PODZOL) && Config.growShortGrass && p_222957_.nextDouble() * 100d <= Config.shortGrassChance) {
             if (!p_222955_.isOutsideBuildHeight(p_222956_.above()) && p_222955_.getBlockState(p_222956_.above()).isAir()) {
-                p_222955_.setBlock(p_222956_.above(), Blocks.FERN.defaultBlockState(), 3);
+                if (p_222957_.nextBoolean()) {
+                    p_222955_.setBlock(p_222956_.above(), Blocks.FERN.defaultBlockState(), 3);
+                } else {
+                    p_222955_.setBlock(p_222956_.above(), Blocks.SHORT_GRASS.defaultBlockState(), 3);
+                }
             }
-        } else if ((p_222954_.is(Blocks.SHORT_GRASS) || p_222954_.is(Blocks.FERN)) && Config.growTallGrass && p_222955_.random.nextDouble() <= Config.tallGrassChance) {
+        } else if ((p_222954_.is(Blocks.SHORT_GRASS) || p_222954_.is(Blocks.FERN)) && Config.growTallGrass && p_222957_.nextDouble() * 100d <= Config.tallGrassChance) {
             BlockState BlockBellow = p_222955_.getBlockState(p_222956_.below());
             if (!p_222955_.isOutsideBuildHeight(p_222956_.above()) && BlockAbove.isAir() && (BlockBellow.is(Blocks.GRASS_BLOCK)) || BlockBellow.is(Blocks.PODZOL) || BlockBellow.is(Blocks.MYCELIUM))
             {
