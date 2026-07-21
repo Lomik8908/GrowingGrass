@@ -33,7 +33,7 @@ public class BlockBehaviourMixin {
                 if (p_222957_.nextBoolean()) {
                     p_222955_.setBlock(p_222956_.above(), Blocks.FERN.defaultBlockState(), 3);
                 } else {
-                    p_222955_.setBlock(p_222956_.above(), Blocks.GRASS_BLOCK.defaultBlockState(), 3);
+                    p_222955_.setBlock(p_222956_.above(), Blocks.SHORT_GRASS.defaultBlockState(), 3);
                 }
             }
         } else if ((p_222954_.is(Blocks.SHORT_GRASS) || p_222954_.is(Blocks.FERN)) && Config.growTallGrass && p_222957_.nextDouble() * 100d <= Config.tallGrassChance) {
