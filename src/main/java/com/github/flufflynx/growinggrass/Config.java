@@ -21,11 +21,11 @@ public class Config {
 
     private static final ModConfigSpec.DoubleValue SHORTGRASS_CHANCE = BUILDER
             .comment("The chance of short grass growing.")
-            .defineInRange("shortGrassChance", 0.01, 0, 1);
+            .defineInRange("shortGrassChance", 0.05, 0, 100);
 
     private static final ModConfigSpec.DoubleValue TALLGRASS_CHANCE = BUILDER
             .comment("The chance of tall grass growing.")
-            .defineInRange("tallGrassChance", 0.2, 0, 1);
+            .defineInRange("tallGrassChance", 5d, 0, 100);
 
     static final ModConfigSpec SPEC = BUILDER.build();
 
